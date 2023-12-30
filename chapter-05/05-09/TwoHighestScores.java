@@ -12,19 +12,27 @@ public class TwoHighestScores {
         System.out.println("Enter student score: ");
         double currentScore = input.nextDouble();
         double topScore = currentScore;
+        double secondTopScore = 0;
+        String secondTopStudent = null;
         //Loop through and replace top student if score is higher
         for(int i=0;i<numberOfStudents-1;i++){
-            if(currentScore > topScore){
-                topStudent = currentStudent;
-                topScore = currentScore;
-            }
             System.out.println("Enter student name: ");
             currentStudent = input.next();
             System.out.println("Enter student grade: ");
             currentScore = input.nextDouble();
 
+            if(currentScore > topScore){
+                topStudent = currentStudent;
+                topScore = currentScore;
+            }
+            if(currentScore < topScore && currentScore > secondTopScore){
+                secondTopStudent = currentStudent;
+                secondTopScore = currentScore;
+            }
         }
         //Print answer to console
         System.out.println("The student with the top score is " + topStudent + " his score is " + topScore);
+        System.out.println("The student with the second top score is " + secondTopStudent + " his score is " +
+                secondTopScore);
     }
 }
