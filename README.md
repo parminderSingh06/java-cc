@@ -8,7 +8,7 @@ Problems 2.1-2.23
 
 # Chapter Three
 Problems 3.1-3.33
-.This chapter was entirely skipped as the problems were just using if-else statement over and over after taking user input them perfroming some sort one line calculation, felt like I was writing a novel to much boilerplate.
+.This chapter was entirely skipped as the problems were just using if-else statement over and over after taking user input them perfroming some sort one line calculation, felt like I was writing a novel too much boilerplate.
 
 # Chapter Four
 Problems 4.1-4.26
